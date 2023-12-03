@@ -7,9 +7,9 @@ st.set_page_config(layout='wide')
 
 st.title("MINERADOR DE PRODUTOS AFILIADOS")
 
-produtos = pd.read_csv('dados//produto.csv')
+produtos = pd.read_csv('produto.csv')
 #print(f'Produtos {produtos.shape}')
-produtores = pd.read_csv('dados//produtores.csv')
+produtores = pd.read_csv('produtores.csv')
 produtos = produtos.drop_duplicates()
 #print(f'Produtos Drop {produtos.shape}')
 produtores = produtores.drop_duplicates()
